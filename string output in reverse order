@@ -1,0 +1,8 @@
+# 第一张方法：字符串切片
+sentence = '英语作业今晚截止'
+print(sentence[::-1])
+# 第二种方法：使用循环转换然后逆序输出
+sentence = '今天也是要努力学习的一天'
+num1 = int(len(sentence))
+for i in range(num1-1, -1, -1):  # 这里有一点小问题，没有办法逆序输出
+    print(sentence[i],end = '')
