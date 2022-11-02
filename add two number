@@ -1,0 +1,4 @@
+number1 = int(input("请输入一个随机数："))
+number2 = int(input("请再输入一个随机数："))
+sum = number1  +  number2
+print(f"{number1}+{number2}={sum}")
