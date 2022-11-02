@@ -1,0 +1,7 @@
+count = 0 
+for x in range(1,20): #x为公鸡数，公鸡每只5元，20只刚好100，是不可能取到20的，由题可知公鸡数永远不可能为0
+    for y in range(33): #y为母鸡数
+        z = 100 - x - y
+        if z > 0 and 5*x + 3*y + z/3 == 100:
+            count += 1
+            print(f'第{count}种办法，公鸡{x}只，母鸡{y}只，小鸡{z}只')
